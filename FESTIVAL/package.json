@@ -1,0 +1,27 @@
+{
+  "name": "festival-musical",
+  "version": "1.0.0",
+  "description": "para SASS Y NPM",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch SRC/scss:build/css",
+    "dev": "gulp"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "\"DANIEL AVALOS\"",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "glub": "^1.0.3",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.8",
+    "sharp": "^0.33.4"
+  }
+}

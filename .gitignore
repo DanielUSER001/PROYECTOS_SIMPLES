@@ -1,1 +1,5 @@
-bienesraices_inicio/node_modules
+FESTIVAL/node_modules
+FESTIVAL/SRC/img
+FESTIVAL/build/img
+.gitignore
+.git
