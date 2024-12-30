@@ -1,0 +1,124 @@
+@use "../base/mixins.scss" as m;
+@use  "../base/variables.scss" as v;
+
+.contenedor-dark-img {
+    margin-left: 3rem;
+    width: 4rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+
+.barra {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 24rem ;
+    width: 100%;
+
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu_right {
+
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+ 
+    }
+
+    @include m.telefono {
+        .contenedor-dark-img {
+            display: flex;
+            align-items: center;
+            background-color: v.$blanco;
+            border-radius: 40%;
+            padding: .5rem;
+            margin: 0 auto;
+        }
+    }
+    @include m.tablet {
+        .contenedor-dark-img {
+            background-color: transparent;
+            margin-left: 3rem;
+
+        }
+    }
+
+    
+
+
+
+
+
+}
+
+
+
+.navegacion {
+    //ocultar enlaces para celular
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s linear ;
+
+    @include m.tablet {
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    a {
+        color: v.$blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+        &:hover {
+            color: v.$verde;
+        }
+        &.cerrar-sesion {
+            color: v.$rojo;
+            &:hover {
+                color: darken(v.$rojo, 9);
+            }
+          }
+        @include m.tablet {
+            margin-right: 2rem;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+       
+    }
+}
+.mostrar_menu {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }    
+}
+
+.mobile-menu {
+    
+    @include m.tablet {
+        display: none;
+
+    }
+    img {
+        width: 4rem;
+        cursor: pointer;
+    }
+}

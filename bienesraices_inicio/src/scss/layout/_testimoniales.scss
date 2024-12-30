@@ -1,0 +1,37 @@
+@use "../base/mixins.scss" as m;
+@use  "../base/variables.scss" as v;
+
+.testimonial {
+    background-color: v.$verde;
+    padding: 5rem;
+    border-radius: 5rem;
+    font-size: 2.2rem;
+    color: v.$blanco;
+
+    blockquote {
+        padding-left: 5rem;
+        position: relative;
+
+        &::before {
+            content: " ";
+            position:absolute;
+            left: -2rem;
+            top: -1.6rem;
+            background-image: url(http://localhost/bienesraices_inicio/build/img/comilla.svg);
+            display: inline-block;
+            width: 7rem;
+            height: 8rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+
+    
+
+    p {
+        text-align: right;
+        color: v.$blanco;
+    }
+
+}

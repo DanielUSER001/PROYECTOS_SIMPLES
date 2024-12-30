@@ -1,0 +1,28 @@
+@use "../base/mixins.scss" as m;
+@use  "../base/variables.scss" as v;
+
+
+.footer {
+    padding: calc(v.$separacion / 2) 0;
+    background-color:  v.$grisOscuro;
+    
+
+    .contenedor--footer {
+        padding:  calc(v.$separacion / 2);
+
+    }
+    .copyright {
+        color: v.$blanco;
+        text-align: center;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+
+}
+

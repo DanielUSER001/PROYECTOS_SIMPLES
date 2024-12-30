@@ -1,0 +1,57 @@
+@import "../base/variables";
+.alerta {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  display: none;
+  &.error {
+    background-color: red;
+    display: block;
+  }
+  
+  &.correcto {
+    background-color: $verde;
+    display: block;
+  }
+  &.fallido {
+    background-color: red;
+    display: block;
+  }
+}
+
+table.propiedades {
+  margin-top: 4rem;
+  width: 100%;
+  border-spacing: 0;
+
+  thead {
+    background-color: $verde;
+    th {
+      color: $blanco;
+      padding: 2rem;
+    }
+
+  
+  }
+
+  .img-tabla {
+    width: 10rem;
+  }
+}
+
+tbody {
+  tr {
+    td {
+      color: $negro;
+    }
+
+  }
+}
+
+
+.img-propiedad{
+  width: 50%;
+  height: 25rem;
+}
